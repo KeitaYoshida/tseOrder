@@ -13,18 +13,18 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css'
 require('@/assets/scss/common.scss')
 
 
-const config = {
-  apiKey: "AIzaSyDcXOtKot3ZmuHpdglcjw-UbkawbiwWDZQ",
-  authDomain: "tse-order.firebaseapp.com",
-  databaseURL: "https://tse-order.firebaseio.com",
-  projectId: "tse-order",
-  storageBucket: "",
-  messagingSenderId: "248212162338",
-  appId: "1:248212162338:web:6e81757345908584"
-};
-firebase.initializeApp(config);
+// const config = {
+//   apiKey: "AIzaSyDcXOtKot3ZmuHpdglcjw-UbkawbiwWDZQ",
+//   authDomain: "tse-order.firebaseapp.com",
+//   databaseURL: "https://tse-order.firebaseio.com",
+//   projectId: "tse-order",
+//   storageBucket: "",
+//   messagingSenderId: "248212162338",
+//   appId: "1:248212162338:web:6e81757345908584"
+// };
+// firebase.initializeApp(config);
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
 
 Number.prototype.numToRev = function () {
   let val = ("0000" + this).slice(-4);
