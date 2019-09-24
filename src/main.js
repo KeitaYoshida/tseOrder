@@ -12,19 +12,19 @@ import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 require('@/assets/scss/common.scss')
 
+const config = {
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  databaseURL: process.env.DATABASE_URL,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STRAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGEING_SENDER_ID,
+  appId: process.env.APP_ID
+};
 
-// const config = {
-//   apiKey: "AIzaSyDcXOtKot3ZmuHpdglcjw-UbkawbiwWDZQ",
-//   authDomain: "tse-order.firebaseapp.com",
-//   databaseURL: "https://tse-order.firebaseio.com",
-//   projectId: "tse-order",
-//   storageBucket: "",
-//   messagingSenderId: "248212162338",
-//   appId: "1:248212162338:web:6e81757345908584"
-// };
-// firebase.initializeApp(config);
+firebase.initializeApp(config);
 
-// Vue.config.productionTip = false
+Vue.config.productionTip = false
 
 Number.prototype.numToRev = function () {
   let val = ("0000" + this).slice(-4);
