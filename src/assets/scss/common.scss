@@ -1,0 +1,31 @@
+.a4 {
+  display: block;
+  background: white;
+  /* 背景を白く */
+  width: 210mm !important;
+  height: 296mm !important;
+
+  /* 1mm余裕をもたせる */
+  page-break-after: always;
+}
+
+.a4-back {
+  background: #ccc;
+}
+
+.a4-area {
+  margin: 0 auto;
+  width: 210mm !important;
+
+  .row {
+    margin: 0 auto;
+  }
+
+  .page_index {
+    font-size: 0.5rem;
+  }
+}
+
+p {
+  margin: 0;
+}
